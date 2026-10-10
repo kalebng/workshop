@@ -11,6 +11,6 @@ If any link can't be read, stop and tell me.
 2. Propose which modules it needs and why (FRAME is mandatory). Mark rules that don't fit as "not applicable" with a reason.
 3. Flag anything this project needs that no module covers.
 4. Draft its GEOMETRY.md by asking me about purpose, audience and direction. Mark every item Confirmed, Proposed, Pending or Open; never upgrade a status on your own.
-5. Draft its LEBBIE.md, using the version number shown in the reference header, and the CLAUDE.md block with that version filled in.
+5. Draft its LEBBIE.md (at the repo root, listing where the other files will live), using the version number shown in the reference header, and the CLAUDE.md block with that version filled in.
 
 Wait for my approval before building anything.

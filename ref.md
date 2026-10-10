@@ -1,6 +1,6 @@
 # Reference
 
-**Version:** 1.0 · **Updated:** 10 Oct 2026 · **Owner:** Kaleb
+**Version:** 1.1 · **Updated:** 10 Oct 2026 · **Owner:** Kaleb
 
 ---
 
@@ -18,9 +18,9 @@ Bugs and weaknesses go somewhere actually private: a private repo's issues, or G
 
 1. **Modules.** Rules are grouped into modules named after bike parts. Each project picks what it needs. **FRAME is mandatory.**
 2. **Project files.** Every project repo has three files:
-   - `LEBBIE.md`: ID card (modules, adopted version, approved exceptions, last audit)
+   - `LEBBIE.md`: ID card (modules, adopted version, approved exceptions, last audit). Always at the repo root; lists the paths of the other two.
    - `GEOMETRY.md`: the project's purpose, audience, direction and open questions (the "why")
-   - `DECISIONS.md`: the project's own rules (the "what")
+   - `DECISIONS.md`: the project's own rules (the "what"). An existing decision log may serve as this file.
 3. **Which version is enforced.** A project follows the version on its ID card. The latest version is read only to detect changes; new rules apply to a project after Kaleb approves adopting them.
 4. **Snapshots.** Every published version is tagged in git (`v1.0`, `v1.1`…), so any version can be read exactly:
    - Latest: `https://raw.githubusercontent.com/kalebng/workshop/main/ref.md`
@@ -106,7 +106,7 @@ Cloudflare settings record (domain-wide). Use the dashboard's actual labels. F-7
 After a change that can affect crawler access (crawler rules, redirects, hosting), run a live URL test in Google Search Console and Bing Webmaster Tools on representative pages. This verifies Google and Bing fetching only; it is not proof for other crawlers, every URL, or indexing.
 
 **F-9 · Project files and Claude block** · Active
-Every project repo has `LEBBIE.md`, `GEOMETRY.md` and `DECISIONS.md` (from `templates/`), and the Lebbie block in its `CLAUDE.md` (from `templates/CLAUDE-block.md`). Work that contradicts the project's GEOMETRY is proposed to Kaleb first, like any rule change.
+Every project repo has `LEBBIE.md`, `GEOMETRY.md` and `DECISIONS.md` (from `templates/`), and the Lebbie block in its `CLAUDE.md` (from `templates/CLAUDE-block.md`). `LEBBIE.md` stays at the repo root and lists the paths of the other project files, which may live anywhere in the repo (e.g. `docs/`). Work that contradicts the project's GEOMETRY is proposed to Kaleb first, like any rule change.
 
 **F-10 · No competing copies** · Active
 Platform hostnames (`*.workers.dev`, `*.pages.dev`), preview deployments and any other alternate host either redirect to the real address, are disabled, or are not indexable.
@@ -206,4 +206,5 @@ These requests imitate crawler names from an ordinary server. They show changes 
 
 | Version | Date | Change |
 |---|---|---|
+| 1.1 | 10 Oct 2026 | Clarification (F-9, How this works): `LEBBIE.md` stays at the root and lists paths of the other project files; an existing decision log may serve as `DECISIONS.md`. Added `prompts/ONBOARD.md`. Nothing existing breaks. |
 | 1.0 | 10 Oct 2026 | Created from the lebbie.cc discoverability review (9 Oct 2026); revised after an independent audit before first publication. FRAME, LIGHTS, HEADUNIT Active; DRIVETRAIN Draft. |
