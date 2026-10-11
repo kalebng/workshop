@@ -1,6 +1,6 @@
 LEBBIE AUDIT
 
-1. Read this project's LEBBIE.md, GEOMETRY.md and DECISIONS.md.
+1. Read LEBBIE.md at the repo root, then GEOMETRY.md and DECISIONS.md at the paths it lists.
 2. Read the adopted reference version:
    https://raw.githubusercontent.com/kalebng/workshop/v[VERSION]/ref.md
 3. Read the latest reference:

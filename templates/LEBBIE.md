@@ -23,5 +23,9 @@
 | — | — |
 
 ## Project files
-- `GEOMETRY.md`: purpose, audience, direction, open questions
-- `DECISIONS.md`: this project's own rules (create it even if empty)
+This file stays at the repo root. Paths of the other project files:
+
+| File | Path |
+|---|---|
+| GEOMETRY.md | [e.g. docs/GEOMETRY.md] |
+| DECISIONS.md | [e.g. docs/DECISIONS.md] (create it even if empty) |
